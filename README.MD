@@ -16,3 +16,5 @@ from django.urls import reverse_lazy
 `git add <filename> / <dirname>` - добавить файл или папку
 
 `git add .` или `git add -A` - добавить текущий каталог и все файлы
+
+Какая-то гадость
