@@ -17,4 +17,19 @@ from django.urls import reverse_lazy
 
 `git add .` или `git add -A` - добавить текущий каталог и все файлы
 
-Какая-то гадость
+## Откатиться к комиту *
+
+`git checkout 519b354b032cd64fc2e3ce123490ce694c34 ` - откатиться к комиту
+
+`git switch -c work_code` - создали ветку от несломанного комита
+
+```
+git reset --hard <commit> - все изменения после комита уделаны
+git reset --soft 
+git reset --mixed 
+```
+
+## Работа с ветками 
+
+`git branch` - посмотреть ветки 
+
