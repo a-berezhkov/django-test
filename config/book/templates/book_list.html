@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+<a href="{% url 'book-create' %}">Добавить</a>
+<ul>
+  {% for book in books %}
+  <li>
+
+    <a href="{% url 'book-detail' book.pk %}"> {{ book.full_name }}</a>
+    <a href="{% url 'book-delete' book.pk %}"> Удалить</a>
+    <a href="{% url 'book-update' book.pk %}"> Обновить</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
