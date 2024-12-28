@@ -1,12 +1,13 @@
 {% extends "base.html" %} {% block content %}
-<a href="{% url 'book-create' %}">Добавить</a>
-<ul>
+<a class="btn btn-success" href="{% url 'book-create' %}">Добавить</a>
+<ul class="list-group">
   {% for book in books %}
-  <li>
-
+  <li class="list-group-item">
     <a href="{% url 'book-detail' book.pk %}"> {{ book.full_name }}</a>
-    <a href="{% url 'book-delete' book.pk %}"> Удалить</a>
-    <a href="{% url 'book-update' book.pk %}"> Обновить</a>
+    <a href="{% url 'book-delete' book.pk %}">
+      <i style="color: red" class="bi bi-trash"></i
+    ></a>
+    <a href="{% url 'book-update' book.pk %}"> <i class="bi bi-pen"></i></a>
   </li>
   {% endfor %}
 </ul>

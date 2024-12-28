@@ -11,6 +11,3 @@ class Book(models.Model):
     
     def full_name(self):
         return self.title + "-" + self.author
-
-class Category(models.Model):
-	title = models.Charfield(max-length=255)

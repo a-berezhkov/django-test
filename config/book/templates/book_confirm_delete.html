@@ -3,7 +3,7 @@
   {% csrf_token %} 
   {{ form.as_p }}
    
-  <button type="submit">Удалить</button>
+  <button type="submit" class="btn btn-danger">Удалить</button>
   <a href="{% url 'book-list' %}"> Назад </a>
 </form>
 {% endblock %}
